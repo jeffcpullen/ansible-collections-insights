@@ -28,9 +28,9 @@ jobs:
           - stable-2.12
           # EOL Nov 2023
           - stable-2.13
-          # EOL May 2024
-          - stable-2.14
-          # Requires python >= 3.8
+          # EOL May 2024 - Requires python >=3.9
+          # - stable-2.14
+          # Requires python >= 3.9
           # - devel
         python:
           # - 2.7 # This means RHEL 7 untested

@@ -1,15 +1,17 @@
-insights - insights inventory source
-====================================
+# insights - insights inventory source
+
 - [Synopsis](Synopsis)
 - [Requirements](Requirements)
 - [Parameters](Parameters)
 - [Examples](Examples)
 
 ## Synopsis
+
 - Get inventory hosts from the cloud.redhat.com inventory service.
 - Uses a YAML configuration file that ends with ``insights.(yml|yaml)``.
 
 ## Requirements
+
 - requests >= 1.1
 
 ## Parameters
@@ -24,7 +26,7 @@ insights - insights inventory source
 <tr>
 <td><b>get_patches</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 False</td>
 <td></td>
 <td> Fetch patching information for each system.</td>
@@ -32,7 +34,7 @@ False</td>
 <tr>
 <td><b>get_tags</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 False</td>
 <td></td>
 <td> Fetch tag data for each system.</td>
@@ -40,7 +42,7 @@ False</td>
 <tr>
 <td><b>filter_tags</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 []</td>
 <td></td>
 <td> Filter hosts with given tags</td>
@@ -48,7 +50,7 @@ False</td>
 <tr>
 <td><b>get_system_advisories</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 False</td>
 <td></td>
 <td> Get advisories per ansible managed host in hostvars.</td>
@@ -56,7 +58,7 @@ False</td>
 <tr>
 <td><b>get_system_packages</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 False</td>
 <td></td>
 <td> Get packages information per ansible managed host in hostvars.</td>
@@ -91,7 +93,7 @@ False</td>
 <tr>
 <td><b>vars_prefix</b></br>
 </td>
-<td><b>Default:</b><br> 
+<td><b>Default:</b><br>
 insights_</td>
 <td></td>
 <td> prefix to apply to host variables</td>
@@ -99,7 +101,8 @@ insights_</td>
 </table>
 
 ## Examples
-```
+
+```yaml
 
 # basic example using environment vars for auth
 plugin: redhat.insights.insights

@@ -1,0 +1,5 @@
+---
+
+# Hiding the shebang in with a template due to
+# open issue https://github.com/ansible/ansible/issues/76612
+insights_client_bash_shebang: '#!/bin/bash'

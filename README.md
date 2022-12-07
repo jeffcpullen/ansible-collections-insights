@@ -11,3 +11,11 @@ Red Hat Insights Collection
   - **Roles**:
     - [insights_client](https://github.com/redhatinsights/ansible-collections-insights/blob/master/roles/insights_client/README.md)
     - [compliance](https://github.com/redhatinsights/ansible-collections-insights/blob/master/roles/compliance/README.md)
+
+## Requirements
+
+python requests
+
+```
+pip3 install requests packaging
+```

@@ -1,4 +1,4 @@
-#!/bin/bash
+{{ insights_client_bash_shebang }}
 #
 #     Copyright 2018,2017 Red Hat, Inc
 #

@@ -16,18 +16,28 @@ jobs:
     strategy:
       matrix:
         ansible:
+          # <https://www.redhat.com/en/blog/updates-using-ansible-rhel-86-and-90>
+          # <https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html#ansible-core-changelogs>
           # It's important that Sanity is tested against all stable-X.Y branches
           # Testing against `devel` may fail as new tests are added.
         # - stable-2.9 # Only if your collection supports Ansible 2.9
+          # - stable-2.10
+          # EOL
           - stable-2.11
-          - stable-2.10
-          - devel
+          # EOL May 2023
+          - stable-2.12
+          # EOL Nov 2023
+          - stable-2.13
+          # EOL May 2024
+          - stable-2.14
+          # Requires python >= 3.8
+          # - devel
         python:
           - 2.7
-          - 3.7
+          - 3.6
           - 3.8
-        exclude:
-          - python: 3.8  # blocked by ansible/ansible#70155
+          - 3.9
+        exclude: []
     runs-on: ubuntu-latest
     steps:
 
